@@ -18,10 +18,233 @@
         .font-poppins{
             font-family: "Poppins", sans-serif;
         }
+        .primary-bg{
+            background-color: #F4F7FF;
+        }
+        .red{
+            color: red;
+        }
     </style>
+
     
 </head>
-<body class="font-poppins">
-    
+<body id="body" class="font-poppins primary-bg p-6">
+    <section>
+        <!-- header section start here -->
+        <header class="container mx-auto p-[22px] bg-white  rounded-2xl">
+            <nav class="navbar bg-white">
+                <div class="flex items-center gap-2 flex-1">
+                  <div class="w-12">
+                    <img src="/assets/logo.png" alt="">
+                  </div>
+                  <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex gap-9 items-center">
+                  <div class="flex py-[14px] px-[18px] gap-3 items-center bg-[#F4F7FF] rounded-[32px]">
+                    <div class="">
+                        <img src="./assets/checkbox.png" alt="">
+                    </div>
+                    <h3 id="task-increment" class="font-bold text-3xl">23</h3>
+                  </div>
+                  <div id="bg-color-creat" class="bg-[#F4F7FF] p-3 rounded-full">
+                    <img width=""  src="./assets/theme-btn.png" alt="">
+                  </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- main section -->
+        <main class="container flex gap-6 mx-auto mt-5">
+            <div class="bg-white flex-3 rounded-2xl">
+
+                <!-- main top bar -->
+                <div class="flex gap-6 p-6">
+                    <!-- task assigned card -->
+                    <div class="flex flex-1 gap-5 items-center primary-bg p-6 rounded-xl">
+                        <div class="bg-white p-4 rounded-full justify-center items-center">
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div class="">
+                            <p>Task Assigned</p>
+                            <h2 id="task-assigned-num" class="font-bold text-3xl">6</h2>
+                        </div>
+                    </div>
+
+                    <!-- discover card-->
+                    <div id="discover-new" class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex flex-2 gap-5 px-10 py-6 rounded-xl">
+                        <div class="">
+                            <img src="./assets/board.png" alt="">
+                        </div>
+                        <div class="text-2xl font-medium text-white">
+                            <h3>Discover Something</h3>
+                            <h3>New Today!</h3>
+                        </div>
+                    </div>
+
+                    <!-- date card -->
+                    <div class="flex flex-1 gap-5 items-center primary-bg p-6 rounded-xl">
+                        <div class="bg-white p-4 rounded-full justify-center items-center">
+                            <img src="./assets/calender.png" alt="">
+                        </div>
+                        <div class="">
+                            <p class="text-lg"><span id="day"></span>,</p>
+                            <h2 class="font-bold text-xl"><span id="month"></span> <span id="date-year"></span></h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="border-dashed border-gray-400">
+
+                <!-- main content section -->
+                <div class="p-6 grid grid-cols-3 gap-9">
+                    <!-- fix mobile button card -->
+                    <div class="primary-bg p-6 rounded-2xl">
+                        <div class="">
+                            <p class="bg-white inline px-4 py-2 rounded-lg ">ShopEase</p>
+                            <h3 class="font-medium text-2xl my-4">Fix Mobile Button Issue</h3>
+                            <div class="bg-white p-4 rounded-lg text-gray-500">
+                                <p>Debug using Chrome DevTools, check for overlapping...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-t border-dashed border-gray-400 mt-3 pt-3">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[18px]">21 March 2025</h4>
+                            </div>
+                            <div class="justify-center items-center mt-2">
+                                <button class="btn completed-btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pay Success Mode -->
+                    <div class="primary-bg p-6 rounded-2xl">
+                        <div class="">
+                            <p class="bg-white inline px-4 py-2 rounded-lg ">Soft Pay</p>
+                            <h3 class="font-medium text-2xl my-4">Add Pay Success Modal</h3>
+                            <div class="bg-white p-4 rounded-lg text-gray-500">
+                                <p>Debug using Chrome DevTools, check for overlapping...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-t border-dashed border-gray-400 mt-3 pt-3">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[18px]">25 March 2025</h4>
+                            </div>
+                            <div class="justify-center items-center mt-2">
+                                <button class="btn completed-btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add new reaction card -->
+                    <div class="primary-bg p-6 rounded-2xl">
+                        <div class="">
+                            <p class="bg-white inline px-4 py-2 rounded-lg ">Meta</p>
+                            <h3 class="font-medium text-2xl my-4">Add new reaction</h3>
+                            <div class="bg-white p-4 rounded-lg text-gray-500">
+                                <p>Debug using Chrome DevTools, check for overlapping...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-t border-dashed border-gray-400 mt-3 pt-3">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[18px]">31 March 2025</h4>
+                            </div>
+                            <div class="justify-center items-center mt-2">
+                                <button class="btn completed-btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fix video loading issue card -->
+                    <div class="primary-bg p-6 rounded-2xl">
+                        <div class="">
+                            <p class="bg-white inline px-4 py-2 rounded-lg ">Programming Hero</p>
+                            <h3 class="font-medium text-2xl my-4">Fix Video Loading Issue</h3>
+                            <div class="bg-white p-4 rounded-lg text-gray-500">
+                                <p>Debug using Chrome DevTools, check for overlapping...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-t border-dashed border-gray-400 mt-3 pt-3">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[18px]">21 March 2025</h4>
+                            </div>
+                            <div class="justify-center items-center mt-2">
+                                <button class="btn completed-btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- integrate ai search card -->
+                    <div class="primary-bg p-6 rounded-2xl">
+                        <div class="">
+                            <p class="bg-white inline px-4 py-2 rounded-lg ">Google LLC</p>
+                            <h3 class="font-medium text-2xl my-4">Integrate AI Search</h3>
+                            <div class="bg-white p-4 rounded-lg text-gray-500">
+                                <p>Debug using Chrome DevTools, check for overlapping...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-t border-dashed border-gray-400 mt-3 pt-3">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[18px]">1 April 2025</h4>
+                            </div>
+                            <div class="justify-center items-center mt-2">
+                                <button class="btn completed-btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ami probashi site card -->
+                    <div class="primary-bg p-6 rounded-2xl">
+                        <div class="">
+                            <p class="bg-white inline px-4 py-2 rounded-lg ">Polygon Tech</p>
+                            <h3 class="font-medium text-2xl my-4">Review Ami Probashi Site</h3>
+                            <div class="bg-white p-4 rounded-lg text-gray-500">
+                                <p>Debug using Chrome DevTools, check for overlapping...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-t border-dashed border-gray-400 mt-3 pt-3">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[18px]">5 May 2025</h4>
+                            </div>
+                            <div class="justify-center items-center mt-2">
+                                <button class="btn completed-btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- side section -->
+            <div class="bg-white flex-1 rounded-2xl">
+                <!-- side head section -->
+                <div class="text-center px-6 pt-5 border-b border-dashed border-gray-400">
+                    <div class="flex gap-4 justify-center ">
+                        <div class="">
+                            <img src="./assets/activity.png" alt="">
+                        </div>
+                        <h3>Activity Log</h3>
+                    </div>
+                    <button id="clear-history-btn" class="btn bg-[#3752FD] text-white mt-4 mb-3 rounded-lg">Clear History</button>
+                </div>
+
+                <!-- side message section -->
+                <div id="message-container" class="p-6">
+
+                </div>
+
+            </div>
+        </main>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/redirect.js"></script>
 </body>
 </html>

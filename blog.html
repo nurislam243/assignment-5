@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board Blogs</title>
+
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins{
+            font-family: "Poppins", sans-serif;
+        }
+        .primary-bg{
+            background-color: #F4F7FF;
+        }
+    </style>
+</head>
+<body class="font-poppins primary-bg p-6">
+    <!-- header section -->
+    <header class="container mx-auto p-[22px] bg-white  rounded-2xl">
+        <nav class="navbar bg-white">
+            <div class="flex items-center gap-2 flex-1">
+              <div class="w-12">
+                <img src="/assets/logo.png" alt="">
+              </div>
+              <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="justify-center items-center mt-2">
+                <button id="back-desk-btn" class="btn bg-[#3752FD] text-white rounded-lg">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <h2>Blog</h2>
+        <div class="">
+            <div class="">
+                <p><span>Question-1:</span> What are the different ways to select an element in the DOM?
+                </p>
+            </div>
+            <div class="">
+                <p><span>Question-2:</span>What is the difference between innerHTML, innerText, and textContent ?
+                </p>
+            </div>
+            <div class="">
+                <p><span>Question-3:</span>What is event delegation in the DOM?
+                </p>
+            </div>
+            <div class="">
+                <p><span>Question-4:</span>What is event bubbling in the DOM?
+                </p>
+            </div>
+            <div class="">
+                <p><span>Question-5:</span>How do you create, add, and remove elements using JavaScript?
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('back-desk-btn').addEventListener('click', function(){
+            window.location.href = "./index.html"
+        });
+    </script>
+</body>
+</html>
