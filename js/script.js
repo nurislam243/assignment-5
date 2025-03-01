@@ -6,7 +6,7 @@ for (let i = 0; i < completedBtns.length; i++) {
   completedBtn.addEventListener("click", function (event) {
 
     event.target.setAttribute('disabled', '');
-  
+
     alert('Board updated Successfully');
 
     // decrement check task box
@@ -24,13 +24,23 @@ for (let i = 0; i < completedBtns.length; i++) {
 
     document.getElementById('task-increment').innerText = newTaskIncrement;
 
+
     // activity log message
+    const date = new Date();
+    const hour = date.getHours();
+    const minute = date.getMinutes();
+    const second = date.getSeconds();
+    const amOrPm = (hour >= 12) ? " PM " : " AM ";
+
+    const hour12 = (hour >= 12) ? hour - 12 : hour;
+    const currentTime =`${hour12}:${minute}:${second} ${amOrPm}`;
+
     const messageContainer = document.getElementById('message-container');
 
     const div = document.createElement("div");
     
       div.innerHTML = `<div class="primary-bg p-4 rounded-lg mb-5">
-                        <p>You have completed the task #title at #date</p>
+                        <p>You have completed the task #title at ${currentTime}</p>
                       </div>`;
       
       messageContainer.appendChild(div);

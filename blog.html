@@ -34,33 +34,54 @@
               <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
             </div>
             <div class="justify-center items-center mt-2">
-                <button id="back-desk-btn" class="btn bg-[#3752FD] text-white rounded-lg">Back to Desk</button>
+                <button id="back-desk-btn" class="btn -mt-2 bg-[#3752FD] text-white rounded-lg">Back to Desk</button>
             </div>
         </nav>
     </header>
 
     <!-- main section -->
-    <main>
-        <h2>Blog</h2>
+    <main class="container mx-auto">
+        <h2 class="text-center text-3xl font-bold mt-7 mb-4">Blogs</h2>
         <div class="">
-            <div class="">
-                <p><span>Question-1:</span> What are the different ways to select an element in the DOM?
+            <div class="py-4 bg-white rounded-lg mb-7">
+                <p class="px-4 text-lg font-bold"><span>Question-1:</span> What are the different ways to select an element in the DOM?
+                </p>
+                <hr class="border border-dashed border-gray-400 my-4">
+                <p class="px-4">DOM e kono element select korar jonno onek koyekti poddhoti babohar kora hoi. jemon getElementById(), getElementsByClassName(), querySelectorAll(), querySelector(), getElementsByTagName().</p>
+
+            </div>
+            <div class="py-4 bg-white rounded-lg mb-7">
+                <p class="px-4 text-lg font-bold"><span>Question-2:</span>What is the difference between innerHTML, innerText, and textContent ?
+                </p>
+                <hr class="border border-dashed border-gray-400 my-4">
+                <p class="px-4">
+                    innerHTML, innerText o textContent er moddhe parthokko holo innerHTML kono element er tag shoho text return kore. innerText kono element er tag sarai shudhu text return kore kintu hiden text return kore na.
+                    textContent hidden text shoho shob text return kore.
                 </p>
             </div>
-            <div class="">
-                <p><span>Question-2:</span>What is the difference between innerHTML, innerText, and textContent ?
+            <div class="py-4 bg-white rounded-lg mb-7">
+                <p class="px-4 text-lg font-bold"><span>Question-3:</span>What is event delegation in the DOM?
+                </p>
+                <hr class="border border-dashed border-gray-400 my-4">
+                <p class="px-4">
+                    parent element e event listener jog kore child element er event guluke handle kora hoi jate kore dynamic vabe kono element jog korle notun kore oi element e event listener jog korte na hoi. ar ei poddhoti ke DOM er event delegation bole.
                 </p>
             </div>
-            <div class="">
-                <p><span>Question-3:</span>What is event delegation in the DOM?
+            <div class="py-4 bg-white rounded-lg mb-7">
+                <p class="px-4 text-lg font-bold"><span>Question-4:</span>What is event bubbling in the DOM?
+                </p>
+                <hr class="border border-dashed border-gray-400 my-4">
+                <p class="px-4">
+                    kono child element e kono event ghotle shei event tar parent element er dike opore othe jai. ar etikei DOM e event bubbling bole. kono element e event ghotle tahole prothome shei event tar parent element er kase jai, tarpor tar grandparent , tarpor tar grandparent eivabe solte thake.
                 </p>
             </div>
-            <div class="">
-                <p><span>Question-4:</span>What is event bubbling in the DOM?
+            <div class="py-4 bg-white rounded-lg mb-7">
+                <p class="px-4 text-lg font-bold"><span>Question-5:</span>How do you create, add, and remove elements using JavaScript?
                 </p>
-            </div>
-            <div class="">
-                <p><span>Question-5:</span>How do you create, add, and remove elements using JavaScript?
+                <hr class="border border-dashed border-gray-400 my-4">
+                <p class="px-4">
+                    JavaScript babohar kore dynamic vabe kono element creat kora jai, add kora jai abar remove o kora jai.
+                    JavaScript babohar kore kono elment creat korar jonno document.creatElement() method , add korar jonno appendChild() method abong remove korar jonno removeChild() method babohar kora hoi.
                 </p>
             </div>
         </div>
