@@ -1,10 +1,9 @@
-const completedBtns = document.querySelectorAll(".completed-btn");
+const cards = document.querySelectorAll('.card');
 
-
-for (let i = 0; i < completedBtns.length; i++) {
-  const completedBtn = completedBtns[i];
+for(let i = 0; i< cards.length; i++){
+  const completedBtn = cards[i].querySelector('.completed-btn');
+  const title = cards[i].querySelector(".title")
   completedBtn.addEventListener("click", function (event) {
-
     event.target.setAttribute('disabled', '');
 
     alert('Board updated Successfully');
@@ -40,7 +39,7 @@ for (let i = 0; i < completedBtns.length; i++) {
     const div = document.createElement("div");
     
       div.innerHTML = `<div class="primary-bg p-4 rounded-lg mb-5">
-                        <p>You have completed the task #title at ${currentTime}</p>
+                        <p>You have completed the task ${title.innerText} at ${currentTime}</p>
                       </div>`;
       
       messageContainer.appendChild(div);
