@@ -78,3 +78,9 @@ document.getElementById('bg-color-creat').addEventListener('click', function(){
 document.getElementById("clear-history-btn").addEventListener('click', function(){
   document.getElementById('message-container').innerHTML= "";    
 })
+
+
+// open blog page
+document.getElementById('discover-new').addEventListener('click', function(){
+  window.location.href = "./blog.html"
+});
