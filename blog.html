@@ -47,7 +47,7 @@
                 <p class="px-4 text-lg font-bold"><span>Question-1:</span> What are the different ways to select an element in the DOM?
                 </p>
                 <hr class="border border-dashed border-gray-400 my-4">
-                <p class="px-4">DOM e kono element select korar jonno onek koyekti poddhoti babohar kora hoi. jemon-</p>
+                <p class="px-4">There are several methods used to select an element in the DOM. For example—</p>
                     <ul class="pl-14 list-disc">
                         <li>getElementById(),</li>
                         <li>getElementsByClassName(),</li>
@@ -62,14 +62,14 @@
                 </p>
                 <hr class="border border-dashed border-gray-400 my-4">
                 <p class="px-4">
-                    innerHTML, innerText o textContent er moddhe parthokko holo_ 
+                    The difference between innerHTML, innerText, and textContent is_
                 </p>
                 <ul class="pl-14 list-disc">
-                    <li><span class="font-semibold">innerHTML: </span> innerHTML kono element er tag shoho text return kore.
+                    <li><span class="font-semibold">innerHTML: </span> innerHTML returns the text along with the tags of an element.
                     </li>
-                    <li><span class="font-semibold">innerText: </span> innerText kono element er tag sarai shudhu text return kore  kintu hiden text return kore na.
+                    <li><span class="font-semibold">innerText: </span> innerText returns only the text of an element without tags, but it does not return hidden text.
                     </li>
-                    <li><span class="font-semibold">textContent: </span> textContent hidden text shoho shob text return kore.
+                    <li><span class="font-semibold">textContent: </span> textContent returns all the text, including hidden text.
                     </li>
                 </ul>     
             </div>
@@ -78,7 +78,7 @@
                 </p>
                 <hr class="border border-dashed border-gray-400 my-4">
                 <p class="px-4">
-                    parent element e event listener jog kore child element er event guluke handle kora hoi jate kore dynamic vabe kono element jog korle notun kore oi element e event listener jog korte na hoi. ar ei poddhoti ke DOM er event delegation bole.
+                    Adding an event listener to a parent element to handle child element events ensures that newly added elements dynamically receive the event without needing additional event listeners. This technique is called event delegation in the DOM.
                 </p>
             </div>
             <div class="py-4 bg-white rounded-lg mb-7">
@@ -86,7 +86,7 @@
                 </p>
                 <hr class="border border-dashed border-gray-400 my-4">
                 <p class="px-4">
-                    kono child element e kono event ghotle shei event tar parent element er dike opore othe jai. ar etikei DOM e event bubbling bole. kono element e event ghotle tahole prothome shei event tar parent element er kase jai, tarpor tar grandparent , tarpor tar grandparent eivabe soltei thake.
+                    When an event occurs on a child element, it moves up to its parent element. This is called event bubbling in the DOM. When an event happens on an element, it first goes to its parent, then to its grandparent, and continues moving up the DOM hierarchy.
                 </p>
             </div>
             <div class="py-4 bg-white rounded-lg mb-7">
@@ -94,19 +94,19 @@
                 </p>
                 <hr class="border border-dashed border-gray-400 my-4">
                 <p class="px-4">
-                    JavaScript babohar kore dynamic vabe kono element create kora jai, add kora jai abar remove o kora jai.kivabe element creat, add o remove kora jai ta nise deoa holo_
+                    Using JavaScript, elements can be created, added, and removed dynamically. The methods for creating, adding, and removing elements are given below:
                 </p>
                 <ul class="pl-14 list-disc">
                     <li>
-                        <span class="font-semibold">Create: </span>JavaScript babohar kore kono element create korar jonno document.creatElement() method babohar kora hoi.
+                        <span class="font-semibold">Create: </span>To create an element using JavaScript, the document.createElement() method is used.
                     </li>
                     <li>
                         <span class="font-semibold">Add: </span>
-                        add korar jonno appendChild() method babohar kora hoi.
+                        To add an element, the appendChild() method is used.
                     </li>
                     <li>
                         <span class="font-semibold">Remove: </span>
-                        remove korar jonno removeChild() method babohar kora hoi.
+                        To remove an element, the removeChild() method is used.
                     </li>  
             </div>
         </div>
